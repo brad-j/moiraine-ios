@@ -1,0 +1,51 @@
+{
+  "command": "gen",
+  "request": {
+    "model": "recraftv4_1",
+    "n": 4,
+    "response_format": "b64_json",
+    "image_format": "png",
+    "controls": {
+      "colors": [
+        {
+          "rgb": [
+            129,
+            140,
+            248
+          ]
+        },
+        {
+          "rgb": [
+            255,
+            255,
+            255
+          ]
+        }
+      ],
+      "background_color": {
+        "rgb": [
+          10,
+          10,
+          10
+        ]
+      }
+    },
+    "prompt": "Portrait avatar of Moiraine Damodred, a small slender ageless Aes Sedai noblewoman with long dark hair falling past her shoulders, a calm composed watchful face with smooth ageless features, a small blue stone on a fine chain resting on her brow, high-collared silk dress with a cloak over the shoulders, a carved staff at her side, head and shoulders, bold ink outlines, white with indigo shading and indigo accents on a black background, no text",
+    "size": "1:1",
+    "style_id": "5afd89b9-7cbd-4039-97f7-4431cce6f7e9"
+  },
+  "credits": 140,
+  "style_id": "5afd89b9-7cbd-4039-97f7-4431cce6f7e9",
+  "image_ids": [
+    "cc64bef6-7230-408b-9f70-a77434349537",
+    "d785d46b-e1f5-4f40-82f6-71773dcfc090",
+    "f8a3209c-a3bd-4407-b513-96c45ac549bf",
+    "1b68705b-9012-4799-ad72-be551b243e20"
+  ],
+  "files": [
+    "01.png",
+    "02.png",
+    "03.png",
+    "04.png"
+  ]
+}

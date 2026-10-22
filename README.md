@@ -28,6 +28,7 @@ Not yet: the pages (Schedule, Memory, Skills, Settings, Agents, Activity, Connec
 | `fixtures/` | Event streams recorded from gaidin's faux server, with the snapshot gaidin had at the end, for the reducer's tests. |
 | `scripts/dev-faux.ts` | gaidin's e2e server (a scripted model, no keys, a throwaway data directory) behind a proxy that adds `Tailscale-User-Login`, as `tailscale serve` does. |
 | `project.yml` | XcodeGen spec. `Moiraine.xcodeproj` is generated; don't edit it. |
+| `design/` | The icon's source: Recraft's draft (`moiraine-draft.png`, its request in `moiraine-draft.recraft.json`, draft 02 of four) and its recolor to indigo `#818cf8` (`moiraine-indigo.png`), in the style of gaidin's agent avatars. |
 
 `JSONValue.swift`, `Markdown.swift`, `Reveal.swift` and their tests come from [amyrlin](https://github.com/brad-j/amyrlin)'s core. The fonts are Fira Sans and Fira Code, under the SIL Open Font License (`App/Fonts`). The icons are [Phosphor](https://phosphoricons.com)'s, as the web app's are: the SVGs of the ones the app uses, copied from `phosphor-icons/core` into `App/Assets.xcassets/Phosphor` (MIT, `App/Icons-LICENSE.txt`), and named in `App/Icon.swift`. A new icon is added there both ways.
 
