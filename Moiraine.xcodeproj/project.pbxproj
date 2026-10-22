@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081FA43FA0AF5A4B16103B39 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FE9948F5E2EC7387C5E3B2 /* AvatarView.swift */; };
+		1CA151F8330FD67DB18F9D84 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB71CD532E034FDDCB28C2 /* RootView.swift */; };
+		1D619B8A593FD97488FCAFA2 /* ConversationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3007F702D904AA48753CB7 /* ConversationTests.swift */; };
+		2113796C46C8A67333DD6FFE /* OFL-FiraSans.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A619C6292E3D3DE49FF86 /* OFL-FiraSans.txt */; };
+		316A78A9BF49252AA5CBEB40 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2F69570D8EB5D722A5FCF /* MarkdownView.swift */; };
+		3393BB668DF4FBC846099564 /* FiraSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9B5CB1AF846F994F80BBDD /* FiraSans-Regular.ttf */; };
+		40C42FB8C4270CA295AC34F9 /* FiraSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20A15E06519C123268835522 /* FiraSans-Medium.ttf */; };
+		5A2123F767075D6D1F92325C /* OFL-FiraCode.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78A4BD1F9F3CD816FC5A9672 /* OFL-FiraCode.txt */; };
+		5AA9D933D35F53FD6B358F86 /* FiraSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85E7AB5461AFA4A1AB5AF1A2 /* FiraSans-SemiBold.ttf */; };
+		5CA08C3AE14210A13A813EA2 /* MoiraineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F2E235591BB81305DFE280 /* MoiraineApp.swift */; };
+		63E63035A63291DB2483CFA6 /* FiraSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE2D31447B9C72A7895F022 /* FiraSans-Italic.ttf */; };
+		6663CD6FDEC07A6B0B58883E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78640546CF8EC37223327B0A /* AppModel.swift */; };
+		7D4DD3AF056C3051F4B6CECA /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD51EDB05DF26CFD3EC2BC /* LogView.swift */; };
+		94FD99ECBE83C834B6E33E18 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2965F0251AFCDD72AA12527 /* ConversationModel.swift */; };
+		AE1738AD82FC3CDB58B88E63 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46A98F47496EC6CC25052F /* ConversationView.swift */; };
+		B919FB5073E9D466928D8241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF2E3FFE7AE0742A58B395D /* Assets.xcassets */; };
+		D8940AA1A03FE10C6BDD6AFE /* FiraCode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75E671C86F92F1060F20F681 /* FiraCode.ttf */; };
+		DDDB48FF5541BD6E1F8AA477 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D2D19225E5FC464E5BFF0 /* SidebarView.swift */; };
+		EF35EE9DEC75F6EF39A78325 /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78635DB8E09242EB7F4D3F /* DockView.swift */; };
+		F7D7D4660618E5C8B96F4539 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AC698615CA2A6FCAE159C /* Theme.swift */; };
+		FB67FC20B0DBB9318BC2341D /* MoiraineCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7337066BFB1C16B40CA95ED3 /* MoiraineCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		692D1A8A2335AF1AF3AA5ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC55343829D70470BD12F5E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93EFF4594274A74767F02622;
+			remoteInfo = Moiraine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20A15E06519C123268835522 /* FiraSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Medium.ttf"; sourceTree = "<group>"; };
+		2A9B5CB1AF846F994F80BBDD /* FiraSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Regular.ttf"; sourceTree = "<group>"; };
+		2AF2E3FFE7AE0742A58B395D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D1A619C6292E3D3DE49FF86 /* OFL-FiraSans.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-FiraSans.txt"; sourceTree = "<group>"; };
+		3EBB71CD532E034FDDCB28C2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		500AC698615CA2A6FCAE159C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		60F2E235591BB81305DFE280 /* MoiraineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoiraineApp.swift; sourceTree = "<group>"; };
+		686D2D19225E5FC464E5BFF0 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		6DE2D31447B9C72A7895F022 /* FiraSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Italic.ttf"; sourceTree = "<group>"; };
+		6FF2F69570D8EB5D722A5FCF /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
+		74FE9948F5E2EC7387C5E3B2 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		75E671C86F92F1060F20F681 /* FiraCode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FiraCode.ttf; sourceTree = "<group>"; };
+		78640546CF8EC37223327B0A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		78A4BD1F9F3CD816FC5A9672 /* OFL-FiraCode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-FiraCode.txt"; sourceTree = "<group>"; };
+		79E369961E47DC6601041519 /* MoiraineCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MoiraineCore; path = MoiraineCore; sourceTree = SOURCE_ROOT; };
+		7B78635DB8E09242EB7F4D3F /* DockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockView.swift; sourceTree = "<group>"; };
+		85E7AB5461AFA4A1AB5AF1A2 /* FiraSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		9959E4BA029FFF0D388ABF45 /* Moiraine.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Moiraine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DD51EDB05DF26CFD3EC2BC /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		BA3007F702D904AA48753CB7 /* ConversationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTests.swift; sourceTree = "<group>"; };
+		C2965F0251AFCDD72AA12527 /* ConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModel.swift; sourceTree = "<group>"; };
+		C78449B6F5D2E2C3805438A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CA46A98F47496EC6CC25052F /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		E4DFF943102D8BA2C0AA1495 /* MoiraineUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoiraineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		338C6C6C23A4E70F265E6B1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB67FC20B0DBB9318BC2341D /* MoiraineCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		410E205750D2864C9A4EB632 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				79E369961E47DC6601041519 /* MoiraineCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		69BCEBBF6E95B163B4770063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9959E4BA029FFF0D388ABF45 /* Moiraine.app */,
+				E4DFF943102D8BA2C0AA1495 /* MoiraineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BB8FF46FA8969D9EB32A6A8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78640546CF8EC37223327B0A /* AppModel.swift */,
+				2AF2E3FFE7AE0742A58B395D /* Assets.xcassets */,
+				74FE9948F5E2EC7387C5E3B2 /* AvatarView.swift */,
+				C2965F0251AFCDD72AA12527 /* ConversationModel.swift */,
+				CA46A98F47496EC6CC25052F /* ConversationView.swift */,
+				7B78635DB8E09242EB7F4D3F /* DockView.swift */,
+				C78449B6F5D2E2C3805438A4 /* Info.plist */,
+				A6DD51EDB05DF26CFD3EC2BC /* LogView.swift */,
+				6FF2F69570D8EB5D722A5FCF /* MarkdownView.swift */,
+				60F2E235591BB81305DFE280 /* MoiraineApp.swift */,
+				3EBB71CD532E034FDDCB28C2 /* RootView.swift */,
+				686D2D19225E5FC464E5BFF0 /* SidebarView.swift */,
+				500AC698615CA2A6FCAE159C /* Theme.swift */,
+				91CCF2E52C7A97B424BE8979 /* Fonts */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		91CCF2E52C7A97B424BE8979 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				75E671C86F92F1060F20F681 /* FiraCode.ttf */,
+				6DE2D31447B9C72A7895F022 /* FiraSans-Italic.ttf */,
+				20A15E06519C123268835522 /* FiraSans-Medium.ttf */,
+				2A9B5CB1AF846F994F80BBDD /* FiraSans-Regular.ttf */,
+				85E7AB5461AFA4A1AB5AF1A2 /* FiraSans-SemiBold.ttf */,
+				78A4BD1F9F3CD816FC5A9672 /* OFL-FiraCode.txt */,
+				2D1A619C6292E3D3DE49FF86 /* OFL-FiraSans.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B2F3A88AAC57B74456B14206 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA3007F702D904AA48753CB7 /* ConversationTests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		C544FC89950EFE23E71721D9 = {
+			isa = PBXGroup;
+			children = (
+				7BB8FF46FA8969D9EB32A6A8 /* App */,
+				410E205750D2864C9A4EB632 /* Packages */,
+				B2F3A88AAC57B74456B14206 /* UITests */,
+				69BCEBBF6E95B163B4770063 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75D2FABC53BE13825F694747 /* MoiraineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A27A203AF1A9C2292110420F /* Build configuration list for PBXNativeTarget "MoiraineUITests" */;
+			buildPhases = (
+				8C21D9463465643A35C2E7D1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3F829A329B006542A0AAAE3 /* PBXTargetDependency */,
+			);
+			name = MoiraineUITests;
+			packageProductDependencies = (
+			);
+			productName = MoiraineUITests;
+			productReference = E4DFF943102D8BA2C0AA1495 /* MoiraineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		93EFF4594274A74767F02622 /* Moiraine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D020A4B5E723E2A9A78531F /* Build configuration list for PBXNativeTarget "Moiraine" */;
+			buildPhases = (
+				0DE13DA1922C52B5299D6C0E /* Sources */,
+				83AE06788DA3C98091E639D7 /* Resources */,
+				338C6C6C23A4E70F265E6B1E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moiraine;
+			packageProductDependencies = (
+				7337066BFB1C16B40CA95ED3 /* MoiraineCore */,
+			);
+			productName = Moiraine;
+			productReference = 9959E4BA029FFF0D388ABF45 /* Moiraine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC55343829D70470BD12F5E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					75D2FABC53BE13825F694747 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93EFF4594274A74767F02622;
+					};
+					93EFF4594274A74767F02622 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1BE302676C66375FDDD9BA4B /* Build configuration list for PBXProject "Moiraine" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C544FC89950EFE23E71721D9;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0CDF515349CC27EE1BDC2082 /* XCLocalSwiftPackageReference "MoiraineCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 69BCEBBF6E95B163B4770063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93EFF4594274A74767F02622 /* Moiraine */,
+				75D2FABC53BE13825F694747 /* MoiraineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83AE06788DA3C98091E639D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B919FB5073E9D466928D8241 /* Assets.xcassets in Resources */,
+				D8940AA1A03FE10C6BDD6AFE /* FiraCode.ttf in Resources */,
+				63E63035A63291DB2483CFA6 /* FiraSans-Italic.ttf in Resources */,
+				40C42FB8C4270CA295AC34F9 /* FiraSans-Medium.ttf in Resources */,
+				3393BB668DF4FBC846099564 /* FiraSans-Regular.ttf in Resources */,
+				5AA9D933D35F53FD6B358F86 /* FiraSans-SemiBold.ttf in Resources */,
+				5A2123F767075D6D1F92325C /* OFL-FiraCode.txt in Resources */,
+				2113796C46C8A67333DD6FFE /* OFL-FiraSans.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DE13DA1922C52B5299D6C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6663CD6FDEC07A6B0B58883E /* AppModel.swift in Sources */,
+				081FA43FA0AF5A4B16103B39 /* AvatarView.swift in Sources */,
+				94FD99ECBE83C834B6E33E18 /* ConversationModel.swift in Sources */,
+				AE1738AD82FC3CDB58B88E63 /* ConversationView.swift in Sources */,
+				EF35EE9DEC75F6EF39A78325 /* DockView.swift in Sources */,
+				7D4DD3AF056C3051F4B6CECA /* LogView.swift in Sources */,
+				316A78A9BF49252AA5CBEB40 /* MarkdownView.swift in Sources */,
+				5CA08C3AE14210A13A813EA2 /* MoiraineApp.swift in Sources */,
+				1CA151F8330FD67DB18F9D84 /* RootView.swift in Sources */,
+				DDDB48FF5541BD6E1F8AA477 /* SidebarView.swift in Sources */,
+				F7D7D4660618E5C8B96F4539 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C21D9463465643A35C2E7D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D619B8A593FD97488FCAFA2 /* ConversationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3F829A329B006542A0AAAE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93EFF4594274A74767F02622 /* Moiraine */;
+			targetProxy = 692D1A8A2335AF1AF3AA5ED0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20BA78461AE10A88DD5EDD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bradjohnson.moiraine.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moiraine;
+			};
+			name = Debug;
+		};
+		2EC829A99C2C5F6655BF8935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		2FF5C8F9370AF92B63EA2AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bradjohnson.moiraine;
+				PRODUCT_NAME = Moiraine;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7ADC4078D88EEF23709498B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bradjohnson.moiraine;
+				PRODUCT_NAME = Moiraine;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DC62C8F7C30528D972A31237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bradjohnson.moiraine.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moiraine;
+			};
+			name = Release;
+		};
+		FC2FAC62A0A7385D45B81B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BE302676C66375FDDD9BA4B /* Build configuration list for PBXProject "Moiraine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC829A99C2C5F6655BF8935 /* Debug */,
+				FC2FAC62A0A7385D45B81B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9D020A4B5E723E2A9A78531F /* Build configuration list for PBXNativeTarget "Moiraine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF5C8F9370AF92B63EA2AF5 /* Debug */,
+				7ADC4078D88EEF23709498B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A27A203AF1A9C2292110420F /* Build configuration list for PBXNativeTarget "MoiraineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20BA78461AE10A88DD5EDD41 /* Debug */,
+				DC62C8F7C30528D972A31237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0CDF515349CC27EE1BDC2082 /* XCLocalSwiftPackageReference "MoiraineCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MoiraineCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7337066BFB1C16B40CA95ED3 /* MoiraineCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MoiraineCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC55343829D70470BD12F5E4 /* Project object */;
+}

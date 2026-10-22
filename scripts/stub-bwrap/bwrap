@@ -1,0 +1,5 @@
+#!/bin/sh
+# Stands in for bubblewrap so gaidin's e2e server starts on macOS, where there is none. It runs nothing: a shell tool
+# call fails, as it would with no sandbox to run in. The faux model never makes one.
+echo "bwrap stub: no sandbox on this machine, so nothing runs" >&2
+exit 1

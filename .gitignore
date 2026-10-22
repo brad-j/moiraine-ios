@@ -1,0 +1,8 @@
+# Build output
+build/
+MoiraineCore/.build/
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store

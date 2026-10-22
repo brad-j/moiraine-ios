@@ -1,0 +1,79 @@
+# XcodeGen spec for the app. Generate the project with `xcodegen generate`; do not edit Moiraine.xcodeproj by hand.
+name: Moiraine
+options:
+  bundleIdPrefix: io.bradjohnson
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+packages:
+  MoiraineCore:
+    path: MoiraineCore
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+targets:
+  Moiraine:
+    type: application
+    platform: iOS
+    sources:
+      - App
+    dependencies:
+      - package: MoiraineCore
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: moiraine
+        CFBundleShortVersionString: "0.1.0"
+        CFBundleVersion: "1"
+        LSApplicationCategoryType: public.app-category.productivity
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIUserInterfaceStyle: Dark
+        ITSAppUsesNonExemptEncryption: false
+        # Fira Sans and Fira Code (SIL OFL 1.1, App/Fonts).
+        UIAppFonts:
+          - FiraSans-Regular.ttf
+          - FiraSans-Italic.ttf
+          - FiraSans-Medium.ttf
+          - FiraSans-SemiBold.ttf
+          - FiraCode.ttf
+        # Plain http:// only to this device's own network, for gaidin's faux server in development; gaidin on the
+        # tailnet is https:// through tailscale serve.
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.bradjohnson.moiraine
+        PRODUCT_NAME: Moiraine
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+  MoiraineUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - UITests
+    dependencies:
+      - target: Moiraine
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.bradjohnson.moiraine.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
+schemes:
+  Moiraine:
+    build:
+      targets:
+        Moiraine: all
+        MoiraineUITests: [test]
+    test:
+      targets:
+        - MoiraineUITests
