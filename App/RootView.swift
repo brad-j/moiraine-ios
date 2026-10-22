@@ -80,7 +80,7 @@ private struct Frame: View {
 				NewThreadScreen(agent: agent, menu: { set(true) }).id(route)
 			}
 		} else if app.loaded {
-			ContentUnavailableView("No agents", systemImage: "person.crop.circle.badge.questionmark", description: Text("gaidin answered with no agents on its roster."))
+			ContentUnavailableView { IconLabel("No agents", icon: .robot) } description: { Text("gaidin answered with no agents on its roster.") }
 		} else {
 			VStack(spacing: Space.sm) {
 				ProgressView().tint(Palette.accent)

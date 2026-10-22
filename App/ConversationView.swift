@@ -142,7 +142,7 @@ struct HeaderBar<Content: View>: View {
 	var body: some View {
 		HStack(spacing: Space.xs) {
 			Button(action: menu) {
-				Image(systemName: "sidebar.leading").font(.system(size: 17)).foregroundStyle(Palette.ink2).frame(width: 44, height: 44)
+				Icon(.list, size: 20).foregroundStyle(Palette.ink2).frame(width: 44, height: 44)
 			}
 			.accessibilityLabel("Agents and threads")
 			content
@@ -215,14 +215,13 @@ enum Places {
 		}
 	}
 
-	static func symbol(_ began: String) -> String {
+	static func icon(_ began: String) -> Ph {
 		switch began {
-		case "slack": "number"
-		case "app": "bubble.left"
-		case "voice": "hifispeaker"
-		case "job": "clock"
-		case "agent": "person.2"
-		default: "bubble.left"
+		case "slack": .slackLogo
+		case "voice": .speakerHigh
+		case "job": .clock
+		case "agent": .robot
+		default: .chatCircle
 		}
 	}
 }
@@ -302,7 +301,7 @@ private struct ConversationLog: View {
 					atEnd = true
 					withAnimation(.medium) { position.scrollTo(edge: .bottom) }
 				} label: {
-					Label("new activity", systemImage: "arrow.down").font(Typography.meta)
+					IconLabel("new activity", icon: .arrowDown, size: 12).font(Typography.meta)
 				}
 				.buttonStyle(.secondary)
 				.background(Palette.paper2, in: RoundedRectangle(cornerRadius: Radius.sm))
@@ -393,7 +392,7 @@ struct Composer<Status: View>: View {
 				.animation(.short, value: focused)
 			if running, text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
 				Button(action: stop) {
-					Label("Stop", systemImage: "stop.fill").frame(maxWidth: .infinity, minHeight: 44)
+					IconLabel("Stop", icon: .stop, weight: .fill).frame(maxWidth: .infinity, minHeight: 44)
 				}
 				.buttonStyle(VoiceButtonStyle(voice: .danger, wide: true))
 				.overlay(RoundedRectangle(cornerRadius: Radius.sm).strokeBorder(Palette.bad.opacity(0.5), lineWidth: Metrics.hairline))
@@ -401,7 +400,7 @@ struct Composer<Status: View>: View {
 				Button {
 					submit()
 				} label: {
-					Label("Send", systemImage: "paperplane.fill").frame(maxWidth: .infinity, minHeight: 44)
+					IconLabel("Send", icon: .paperPlaneRight, weight: .fill).frame(maxWidth: .infinity, minHeight: 44)
 				}
 				.buttonStyle(VoiceButtonStyle(voice: .primary, wide: true))
 				.disabled(sending || text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)

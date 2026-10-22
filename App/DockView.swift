@@ -49,10 +49,9 @@ struct DockView: View {
 					.buttonStyle(.plain)
 					.accessibilityHint(request.conversationId == agent.home ? "Opens \(agent.name)'s home conversation" : "Opens \(agent.name)'s thread")
 				}
-				Label(kindText(request), systemImage: request.isQuestion ? "questionmark.circle" : request.isHandover ? "macwindow" : "exclamationmark.shield")
+				IconLabel(kindText(request), icon: request.isQuestion ? .question : request.isHandover ? .browser : .shieldWarning, spacing: Space.x2s)
 					.font(Typography.readingSmall)
 					.foregroundStyle(Palette.ink2)
-					.labelStyle(.titleAndIcon)
 				if request.isCall || request.isHandover {
 					Text(request.isHandover ? (request.profile ?? "") : request.tool).font(Typography.code).foregroundStyle(Palette.ink)
 				}

@@ -76,8 +76,7 @@ private struct BlockView: View, Equatable {
 
 	@ViewBuilder private func marker(_ item: MarkdownBlock.ListItem) -> some View {
 		if let checked = item.checked {
-			Image(systemName: checked ? "checkmark.square" : "square")
-				.font(.system(size: 13))
+			Icon(checked ? .checkSquare : .square, size: 14)
 				.foregroundStyle(checked ? Palette.ok : Palette.ink3)
 				.accessibilityLabel(checked ? "Done" : "Not done")
 		} else if let number = item.number {
@@ -159,7 +158,7 @@ private struct CodeBlock: View {
 							copied = false
 						}
 					} label: {
-						Label(copied ? "Copied" : "Copy", systemImage: copied ? "checkmark" : "doc.on.doc")
+						IconLabel(copied ? "Copied" : "Copy", icon: copied ? .check : .copy, size: 12, spacing: Space.x2s)
 							.font(Typography.meta)
 							.foregroundStyle(copied ? Palette.ok : Palette.ink3)
 					}

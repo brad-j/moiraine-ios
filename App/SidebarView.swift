@@ -130,7 +130,7 @@ private struct Column: View {
 			.hairlineBelow()
 			ScrollView {
 				LazyVStack(alignment: .leading, spacing: 0) {
-					ThreadRow(title: "Home", detail: homeDetail, began: nil, at: nil, current: app.route == .home(agent: agent.id), symbol: "house") {
+					ThreadRow(title: "Home", detail: homeDetail, began: nil, at: nil, current: app.route == .home(agent: agent.id)) {
 						go(.home(agent: agent.id))
 					}
 					ForEach(groups(threads), id: \.name) { group in
@@ -141,7 +141,7 @@ private struct Column: View {
 							.padding(.top, Space.md)
 							.padding(.bottom, Space.x2s)
 						ForEach(group.items) { thread in
-							ThreadRow(title: Format.oneLine(thread.title).isEmpty ? "(no message)" : Format.oneLine(thread.title), detail: nil, began: thread.began, at: thread.lastAt, current: app.route == .thread(agent: agent.id, id: thread.id), symbol: nil) {
+							ThreadRow(title: Format.oneLine(thread.title).isEmpty ? "(no message)" : Format.oneLine(thread.title), detail: nil, began: thread.began, at: thread.lastAt, current: app.route == .thread(agent: agent.id, id: thread.id)) {
 								go(.thread(agent: agent.id, id: thread.id))
 							}
 						}
@@ -181,22 +181,18 @@ private struct ThreadRow: View {
 	let began: String?
 	let at: Double?
 	let current: Bool
-	let symbol: String?
 	let open: () -> Void
 
 	var body: some View {
 		Button(action: open) {
 			VStack(alignment: .leading, spacing: Space.x3s) {
 				HStack(spacing: Space.xs) {
-					if let symbol {
-						Image(systemName: symbol).font(.system(size: 13)).foregroundStyle(current ? Palette.accent : Palette.ink3)
-					}
 					Text(title).font(Typography.sans(Typography.sizeSm, current ? .medium : .regular)).foregroundStyle(current ? Palette.ink : Palette.ink2).lineLimit(1)
 					Spacer(minLength: 0)
 					if let at { Text(Format.lastSeen(Format.date(at))).font(Typography.meta).foregroundStyle(Palette.ink3) }
 				}
 				if let began {
-					Label(Places.label(began), systemImage: Places.symbol(began))
+					IconLabel(Places.label(began), icon: Places.icon(began), size: 12, spacing: Space.x2s)
 						.font(Typography.meta)
 						.foregroundStyle(began == "job" ? Palette.ok : began == "agent" ? Palette.warn : Palette.ink3)
 				} else if let detail, !detail.isEmpty {

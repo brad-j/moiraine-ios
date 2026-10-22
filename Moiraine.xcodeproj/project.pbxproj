@@ -14,12 +14,14 @@
 		316A78A9BF49252AA5CBEB40 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2F69570D8EB5D722A5FCF /* MarkdownView.swift */; };
 		3393BB668DF4FBC846099564 /* FiraSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9B5CB1AF846F994F80BBDD /* FiraSans-Regular.ttf */; };
 		40C42FB8C4270CA295AC34F9 /* FiraSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20A15E06519C123268835522 /* FiraSans-Medium.ttf */; };
+		56531D760AA5A54D014FB438 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588AC31BA2F42F2887F0093 /* Icon.swift */; };
 		5A2123F767075D6D1F92325C /* OFL-FiraCode.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78A4BD1F9F3CD816FC5A9672 /* OFL-FiraCode.txt */; };
 		5AA9D933D35F53FD6B358F86 /* FiraSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85E7AB5461AFA4A1AB5AF1A2 /* FiraSans-SemiBold.ttf */; };
 		5CA08C3AE14210A13A813EA2 /* MoiraineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F2E235591BB81305DFE280 /* MoiraineApp.swift */; };
 		63E63035A63291DB2483CFA6 /* FiraSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE2D31447B9C72A7895F022 /* FiraSans-Italic.ttf */; };
 		6663CD6FDEC07A6B0B58883E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78640546CF8EC37223327B0A /* AppModel.swift */; };
 		7D4DD3AF056C3051F4B6CECA /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD51EDB05DF26CFD3EC2BC /* LogView.swift */; };
+		7F23697B19C5202CC546A22A /* Icons-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44F13E9EE3219DB64E71594B /* Icons-LICENSE.txt */; };
 		94FD99ECBE83C834B6E33E18 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2965F0251AFCDD72AA12527 /* ConversationModel.swift */; };
 		AE1738AD82FC3CDB58B88E63 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46A98F47496EC6CC25052F /* ConversationView.swift */; };
 		B919FB5073E9D466928D8241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF2E3FFE7AE0742A58B395D /* Assets.xcassets */; };
@@ -46,7 +48,9 @@
 		2AF2E3FFE7AE0742A58B395D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1A619C6292E3D3DE49FF86 /* OFL-FiraSans.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-FiraSans.txt"; sourceTree = "<group>"; };
 		3EBB71CD532E034FDDCB28C2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		44F13E9EE3219DB64E71594B /* Icons-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Icons-LICENSE.txt"; sourceTree = "<group>"; };
 		500AC698615CA2A6FCAE159C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5588AC31BA2F42F2887F0093 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		60F2E235591BB81305DFE280 /* MoiraineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoiraineApp.swift; sourceTree = "<group>"; };
 		686D2D19225E5FC464E5BFF0 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		6DE2D31447B9C72A7895F022 /* FiraSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				C2965F0251AFCDD72AA12527 /* ConversationModel.swift */,
 				CA46A98F47496EC6CC25052F /* ConversationView.swift */,
 				7B78635DB8E09242EB7F4D3F /* DockView.swift */,
+				5588AC31BA2F42F2887F0093 /* Icon.swift */,
+				44F13E9EE3219DB64E71594B /* Icons-LICENSE.txt */,
 				C78449B6F5D2E2C3805438A4 /* Info.plist */,
 				A6DD51EDB05DF26CFD3EC2BC /* LogView.swift */,
 				6FF2F69570D8EB5D722A5FCF /* MarkdownView.swift */,
@@ -242,6 +248,7 @@
 				40C42FB8C4270CA295AC34F9 /* FiraSans-Medium.ttf in Resources */,
 				3393BB668DF4FBC846099564 /* FiraSans-Regular.ttf in Resources */,
 				5AA9D933D35F53FD6B358F86 /* FiraSans-SemiBold.ttf in Resources */,
+				7F23697B19C5202CC546A22A /* Icons-LICENSE.txt in Resources */,
 				5A2123F767075D6D1F92325C /* OFL-FiraCode.txt in Resources */,
 				2113796C46C8A67333DD6FFE /* OFL-FiraSans.txt in Resources */,
 			);
@@ -259,6 +266,7 @@
 				94FD99ECBE83C834B6E33E18 /* ConversationModel.swift in Sources */,
 				AE1738AD82FC3CDB58B88E63 /* ConversationView.swift in Sources */,
 				EF35EE9DEC75F6EF39A78325 /* DockView.swift in Sources */,
+				56531D760AA5A54D014FB438 /* Icon.swift in Sources */,
 				7D4DD3AF056C3051F4B6CECA /* LogView.swift in Sources */,
 				316A78A9BF49252AA5CBEB40 /* MarkdownView.swift in Sources */,
 				5CA08C3AE14210A13A813EA2 /* MoiraineApp.swift in Sources */,

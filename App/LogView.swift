@@ -144,8 +144,7 @@ struct Fold: View {
 				}
 			} label: {
 				HStack(alignment: .firstTextBaseline, spacing: Space.xs) {
-					Image(systemName: "chevron.right")
-						.font(.system(size: 10, weight: .semibold))
+					Icon(.caretRight, size: 12)
 						.foregroundStyle(Palette.ink3)
 						.rotationEffect(.degrees(open ? 90 : 0))
 					Text(summary)
@@ -193,9 +192,9 @@ struct StatusMark: View {
 		HStack(spacing: Space.x2s) {
 			switch status {
 			case .running: PulsingDot()
-			case .done: Image(systemName: "checkmark").font(.system(size: 10, weight: .bold))
-			case .error, .noResult: Image(systemName: "xmark").font(.system(size: 10, weight: .bold))
-			case .waiting: Image(systemName: "hourglass").font(.system(size: 10))
+			case .done: Icon(.check, weight: .bold, size: 12)
+			case .error, .noResult: Icon(.x, weight: .bold, size: 12)
+			case .waiting: Icon(.hourglass, size: 12)
 			}
 			Text(status.rawValue).font(Typography.gutter)
 		}
@@ -264,8 +263,7 @@ struct StepsRow: View {
 					}
 				} label: {
 					HStack(alignment: .firstTextBaseline, spacing: Space.xs) {
-						Image(systemName: "chevron.right")
-							.font(.system(size: 10, weight: .semibold))
+						Icon(.caretRight, size: 12)
 							.foregroundStyle(Palette.ink3)
 							.rotationEffect(.degrees(open ? 90 : 0))
 						Text("\(lines.count) steps").font(Typography.sans(Typography.sizeSm, .medium)).foregroundStyle(Palette.ink2)
